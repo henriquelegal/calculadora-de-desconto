@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Descontos</title>
+</head>
+
+<body>
+    <h1>Calculadora de Desconto</h1>
+
+    <form id="formDesconto">
+        <label for="nomeProduto">Nome do Produto:</label>
+        <input type="text" id="nomeProduto" required><br><br>
+        
+
+        <label for="valorOriginal">Valor Original do Produto (R$):</label>
+        <input type="number" id="valorOriginal" required><br><br>
+        
+
+        <label for="percentualDesconto">Percentual de Desconto (%):</label>
+        <input type="number" id="percentualDesconto" required><br><br>
+        
+
+        <button type="submit">Calcular Desconto</button>
+        <button type="button" id="botaoLimpar">Limpar</button>
+    </form>
+
+    <div id="resultadoCalculo">
+
+        <h2>Resultado do Cálculo:</h2>
+
+        <p id="nomeProdutoResultado"></p>
+        <p id="valorDescontoResultado"></p>
+        <p id="valorFinalResultado"></p>
+        
+    </div>
+
+
+    <script src="./js/calculadora.js"></script>
+    
+</body>
+</html>
